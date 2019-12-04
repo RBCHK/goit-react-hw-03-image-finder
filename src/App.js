@@ -1,5 +1,5 @@
+/* eslint-disable no-console */
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import Searchbar from './components/Searchbar/Searchbar';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 import Button from './components/Button/Button';
@@ -53,7 +53,6 @@ export default class App extends Component {
           images: [...prevState.images, ...res.data.hits],
         })),
       )
-      // eslint-disable-next-line no-console
       .catch(err => console.log(err))
       .finally(() => {
         setTimeout(() => {

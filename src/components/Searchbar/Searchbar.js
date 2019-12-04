@@ -37,7 +37,7 @@ export default class Searchbar extends Component {
             className={s.SearchFormInput}
             type="text"
             autoComplete="off"
-            autoFocus
+            // autoFocus
             placeholder="Search images and photos"
             value={query}
             onChange={this.handleChange}
